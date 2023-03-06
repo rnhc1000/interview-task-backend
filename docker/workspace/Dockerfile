@@ -128,7 +128,7 @@ USER root
 COPY ./composer.json /home/laradock/.composer/composer.json
 
 # Add the auth.json for magento 2 credentials
-COPY ./auth.json /home/laradock/.composer/auth.json
+# COPY ./auth.json /home/laradock/.composer/auth.json
 
 # Make sure that ~/.composer belongs to laradock
 RUN chown -R laradock:laradock /home/laradock/.composer
@@ -162,10 +162,10 @@ RUN if [ ${COMPOSER_GLOBAL_INSTALL} = true ]; then \
 ARG COMPOSER_AUTH_JSON=false
 ENV COMPOSER_AUTH_JSON ${COMPOSER_AUTH_JSON}
 
-RUN if [ ${COMPOSER_AUTH_JSON} = false ]; then \
-    # remove the file
-    rm /home/laradock/.composer/auth.json \
-;fi
+# RUN if [ ${COMPOSER_AUTH_JSON} = false ]; then \
+#     # remove the file
+#     rm /home/laradock/.composer/auth.json \
+# ;fi
 
 ARG COMPOSER_REPO_PACKAGIST
 ENV COMPOSER_REPO_PACKAGIST ${COMPOSER_REPO_PACKAGIST}
