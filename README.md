@@ -59,6 +59,6 @@ Unit tests in plus.
 
 * Docker is in docker catalog and you need only do 
   ```
-  docker compose up -d
+  ./start.sh
   ``` 
   to make everything work
