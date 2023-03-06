@@ -52,7 +52,7 @@ Simple Invoice module which is approving or rejecting single invoice using infor
 
 * Proper seeder is located in Invoice module and it’s named DatabaseSeeder
 
-* In .evn.example proper connection to database is established.
+* In .env.example proper connection to database is established.
 
 * Using proper DDD structure is preferred (with elements like entity, value object, repository, mapper / proxy, DTO) but not mandatory.
 Unit tests in plus.
