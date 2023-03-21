@@ -62,3 +62,8 @@ Unit tests in plus.
   ./start.sh
   ``` 
   to make everything work
+
+  docker container is in docker folder. To connect with it just:
+  ```
+  docker compose exec workspace bash
+  ``` 
