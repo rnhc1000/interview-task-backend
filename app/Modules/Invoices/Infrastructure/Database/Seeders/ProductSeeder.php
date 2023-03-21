@@ -37,7 +37,7 @@ class ProductSeeder extends Seeder
                 'id' => Uuid::uuid4()->toString(),
                 'name' => $productNames[array_rand($productNames)],
                 'price' => rand(1111, 9999999),
-                'currency' => CurrencyEnum::USD->value,
+                'currency' => 'usd',
                 'created_at' => now(),
                 'updated_at' => now(),
             ];

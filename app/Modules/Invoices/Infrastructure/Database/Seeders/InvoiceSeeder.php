@@ -6,7 +6,6 @@ namespace App\Modules\Invoices\Infrastructure\Database\Seeders;
 
 use App\Domain\Enums\StatusEnum;
 use Faker\Factory;
-use Faker\Generator;
 use Illuminate\Database\ConnectionInterface;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Collection;
@@ -69,8 +68,3 @@ class InvoiceSeeder extends Seeder
         $this->db->table('invoice_product_lines')->insert($lines);
     }
 }
-
-            // $table->uuid('id')->primary();
-            // $table->uuid('invoice_id');
-            // $table->uuid('product_id');
-            // $table->integer('quantity');
